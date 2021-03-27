@@ -1,0 +1,13 @@
+C sends id
+S grabs RSA-Pub for id
+S generates AES-Key, S generates AES-IV
+S encrypts AES-Key and AES-IV with RSA-Pub for id as CPub(KeyIv)
+S sends CPub(KeyIv) to C
+C decrypts with RSA-Priv KeyIv
+C sends request with KeyIv
+S sends reqsponse with KeyIv
+
+AES-Key = 32byte
+AES-IV = 16byte
+
+After a secure connection has been established the client will now start by transfering his request in a json-format (UTF8-Encoded)
