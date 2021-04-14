@@ -34,7 +34,7 @@ CREATE TABLE `planmeldung`.`admin` (
   `authcode` SMALLINT(4) ,
   `authcodetimeout` DATETIME NOT NULL ,
   `isfrozen` BOOLEAN NOT NULL ,
-  `telegramchatid` INT NOT NULL ,
+  `email` TEXT NOT NULL ,
   `clientrsapublic` JSON NOT NULL ,
   `permissions` INT NOT NULL,
   PRIMARY KEY (`id`)) ENGINE = InnoDB;
