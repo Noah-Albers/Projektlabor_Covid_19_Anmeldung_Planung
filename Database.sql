@@ -7,7 +7,7 @@ CREATE TABLE `user` (
   `location` VARCHAR(100) NOT NULL,
   `street` VARCHAR(50) NOT NULL,
   `housenumber` VARCHAR(10) NOT NULL,
-  `telephone` INT(30),
+  `telephone` VARCHAR(30),
   `email` VARCHAR(69),
   `rfidcode` VARCHAR(10) UNIQUE,
   `autodeleteaccount` BOOLEAN NOT NULL,
