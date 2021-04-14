@@ -1,4 +1,6 @@
 C sends id
+C sends a random nonce
+S encryptes nonce
 S grabs RSA-Pub for id
 S generates AES-Key, S generates AES-IV
 S encrypts AES-Key and AES-IV with RSA-Pub for id as CPub(KeyIv)
@@ -10,4 +12,5 @@ S sends reqsponse with KeyIv
 AES-Key = 32byte
 AES-IV = 16byte
 
-After a secure connection has been established the client will now start by transfering his request in a json-format (UTF8-Encoded)
+C After a secure connection has been established the client will now start by transfering his request in a json-format (UTF8-Encoded)
+S Performs the request and sends back the encrypted nonce and a response
